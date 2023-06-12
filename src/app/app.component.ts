@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import lgZoom from 'lightgallery/plugins/zoom';
+import lgFullscreen from 'lightgallery/plugins/fullscreen';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-lightgallery';
+
+  settings = {
+    plugins: [lgZoom, lgFullscreen]
+  };
 }
